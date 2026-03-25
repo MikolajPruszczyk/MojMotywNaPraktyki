@@ -1,0 +1,216 @@
+/* 
+Theme name: mojmotyw
+Author: Mikolaj
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nawigacja */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    background-color: bisque;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 5px rgb(146, 146, 146);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 10px;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: rgb(255, 140, 0);
+}
+
+
+
+/* sekcja hero */
+.sekcja-start {
+    background-image: url(img/start.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.sekcja-start-tekst {
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.sekcja-start-tekst a {
+    text-decoration: none;
+    color: rgb(255, 164, 52);
+    transition: color 0.3s ease;
+}
+
+.sekcja-start-tekst a:hover {
+    color: rgb(255, 140, 0);
+}
+
+.sekcja-start h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.sekcja-start p {
+    margin-bottom: 10px;
+}
+
+/* Sekcje */
+.sekcja {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* O mnie */
+.podziemnikOmnie1 {
+    background-color: rgba(255, 228, 196, 0.42);
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+.podziemnikOmnie2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.omnie-img {
+    width: 150px;
+    border-radius: 15px;
+    margin: 0 20px;
+}
+
+.lista-omnie {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-omnie li {
+    margin: 5px 0;
+}
+
+/* Oferta */
+.poldzienikOferta1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.poldzienikOferta2 {
+    background-color: blanchedalmond;
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.poldzienikOferta2:hover {
+    transform: translateY(-5px);
+}
+
+/* Kontakt */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button,
+.btn {
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+#error-formularza {
+    color: red;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: blanchedalmond;
+    color: black;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poldzienikOferta1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poldzienikOferta2 {
+        width: 90%;
+    }
+
+    .podziemnikOmnie2 {
+        flex-direction: column;
+    }
+
+    .omnie-img {
+        width: 120px;
+        margin: 10px 0;
+    }
+}
